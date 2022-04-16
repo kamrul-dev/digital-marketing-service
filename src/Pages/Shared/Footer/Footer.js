@@ -7,12 +7,12 @@ const Footer = () => {
         <>
             <div className='pt-5 pb-5' style={{ backgroundColor: '#331C62', color: 'white' }}>
                 <div className='row container mx-auto'>
-                    <div className="col-6 col-sm-12">
+                    <div className="col-lg-6 col-sm-12">
                         <div>
                             <img src={logo} alt="" />
                         </div>
                     </div>
-                    <div className="col-md-3 col-sm-12">
+                    <div className="col-md-3 col-sm-12 col-lg-3">
 
                         <ul className='footer-list'>
                             <li><Link to='/'>tim tim</Link></li>
@@ -25,7 +25,7 @@ const Footer = () => {
                         <Link to='/'>Sign up to deliver</Link>
                         <Link to='/'>Add your restuarant</Link> */}
                     </div>
-                    <div className="col-md-3 col-sm-12">
+                    <div className="col-md-3 col-sm-12 col-lg-3">
                         <ul className='footer-list'>
                             <li><Link to='/'>tim tim</Link></li>
                             <li><Link to='/'>tim tim</Link></li>
@@ -35,16 +35,16 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="row container mx-auto pt-5">
-                    <div className="col-6 col-sm-12">
+                    <div className="col-lg-6 col-sm-12">
                         <p>Copyright &copy; 2022 DIGI MARK</p>
                     </div>
-                    <div className="col-md-2 col-sm-12">
+                    <div className="col-lg-2 col-sm-12">
                         <p>Privacy Policy</p>
                     </div>
-                    <div className="col-md-2 col-sm-12">
+                    <div className="col-lg-2 col-sm-12">
                         <p>Terms of Use</p>
                     </div>
-                    <div className="col-md-2 col-sm-12">
+                    <div className="col-lg-2 col-sm-12">
                         <p>Pricing</p>
                     </div>
 
