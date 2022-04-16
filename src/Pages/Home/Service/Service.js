@@ -9,12 +9,12 @@ const Service = ({ service }) => {
                 <Card className='food-card' style={{ width: '18rem', border: 'none' }}>
                     <Card.Img className='' variant="top" src={image} />
                     <Card.Body className='text-center' >
-                        <Card.Title>{title}</Card.Title>
+                        <Card.Title className='primary-color'>{title}</Card.Title>
                         <Card.Text>
                             {description}
                         </Card.Text>
                         <Card.Text>
-                            ${price}
+                            <span className='fs-5 fw-bold primary-color'>${price}</span> <small>/mo</small>
                         </Card.Text>
                     </Card.Body>
                 </Card>
