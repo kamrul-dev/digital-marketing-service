@@ -1,25 +1,26 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import './Header.css';
 import logo from '../../../images/logo-digi.png';
+import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
             <Navbar className='' style={{ backgroundColor: "" }} collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img className='w-75' src={logo} alt="" />
+                        <Link to='/'><img className='w-75' src={logo} alt="" /></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                         </Nav>
-                        <Nav>
-                            <Nav.Link href="">Blogs</Nav.Link>
-                            <Nav.Link href="">About Me</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
+                        <Nav className='nav-items'>
+                            <NavLink to='/blogs'>Blogs</NavLink>
+                            <NavLink to='/about'>About Me</NavLink>
+                            <NavLink to='/login'>
                                 Login
-                            </Nav.Link>
+                            </NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
