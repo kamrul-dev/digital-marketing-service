@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Facebook Marketing",
+        "price": 300,
+        "description": "Marketing on Facebook can help you efficiently reach all of the people who matter most that offers a variety of highly targeted customer",
+        "image": "https://i.ibb.co/HX5sVwj/facebook.png"
+    },
+    {
+        "id": 2,
+        "title": "Linkedin Marketing",
+        "price": 200,
+        "description": "Generate leads, drive website traffic, and build brand awareness with LinkedIn ads. Marketing on LinkedIn helps you engage a community of professionals",
+        "image": "https://i.ibb.co/5nvdyh2/linkedin.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Youtube Marketing",
+        "price": 250,
+        "description": "Reach the people who matter to you. Start your YouTube video campaign on Google Ads.Reach the people who matter the most",
+        "image": "https://i.ibb.co/BzM13y4/youtube.png"
+    }
+]
