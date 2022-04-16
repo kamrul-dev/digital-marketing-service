@@ -8,8 +8,8 @@ const Header = () => {
         <div>
             <Navbar className='' style={{ backgroundColor: "" }} collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">
-                        <Link to='/'><img className='w-75' src={logo} alt="" /></Link>
+                    <Navbar.Brand>
+                        <NavLink to='/'><img className='w-75' src={logo} alt="" /></NavLink>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
