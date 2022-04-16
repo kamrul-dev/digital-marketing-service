@@ -1,0 +1,8 @@
+.footer-list li {
+    list-style: none;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: white;
+}
