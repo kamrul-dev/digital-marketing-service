@@ -1,5 +1,5 @@
 #login-btn {
-    border: 1px solid #331C62;
+    border: 1px solid #683bc0;
     border-radius: 5px;
     font-weight: bold;
     height: 35px;
@@ -7,6 +7,6 @@
 }
 
 #login-btn:hover {
-    background-color: #331C62;
+    background-color: #683bc0;
     color: white;
 }
