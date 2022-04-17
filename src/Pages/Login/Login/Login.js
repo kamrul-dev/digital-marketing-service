@@ -7,6 +7,7 @@ import Loading from '../../Shared/Loading/Loading';
 import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const [
@@ -65,6 +66,7 @@ const Login = () => {
         <div className='w-50 mx-auto vh-100 mt-5'>
             <Container>
                 <h2 className='text-center primary-color mb-4'>Please Login</h2>
+                <SocialLogin></SocialLogin>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />

@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -37,6 +38,7 @@ const Register = () => {
         <div className='w-50 mx-auto vh-100 mt-5'>
             <Container>
                 <h2 className='text-center primary-color mb-4'>Please Register</h2>
+                <SocialLogin></SocialLogin>
                 <Form onSubmit={handleRegister}>
                     <Form.Group className="mb-3" controlId="formBasicName">
                         <Form.Control type="text" name='name' placeholder="Your Name" />

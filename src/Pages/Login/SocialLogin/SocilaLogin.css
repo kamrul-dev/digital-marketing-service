@@ -1,0 +1,23 @@
+.social-icon {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 30px; */
+}
+
+.social-icon img {
+    width: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    cursor: pointer;
+}
+
+.social-icon img:hover {
+    border: 1px solid lightgrey;
+}
+
+.div-line {
+    background-color: #683bc0;
+    height: 1px;
+    width: 80px;
+}
