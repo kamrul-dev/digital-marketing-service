@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <Navbar className='' style={{ backgroundColor: "" }} collapseOnSelect expand="lg">
+            <Navbar className='nav-container' style={{ backgroundColor: "" }} collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand>
                         <NavLink to='/'><img className='w-75' src={logo} alt="" /></NavLink>
