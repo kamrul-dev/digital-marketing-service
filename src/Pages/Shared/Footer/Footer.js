@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-            <div className='pt-5 pb-5' style={{ backgroundColor: '#331C62', color: 'white' }}>
+            <div className='pt-5 pb-5 mt-5' style={{ backgroundColor: '#331C62', color: 'white' }}>
                 <div className='row container mx-auto'>
                     <div className="col-lg-6 col-sm-12">
                         <div>
