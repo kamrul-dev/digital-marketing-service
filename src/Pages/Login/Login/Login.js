@@ -7,6 +7,7 @@ const Login = () => {
     return (
         <div className='w-50 mx-auto vh-100 mt-5'>
             <Container>
+                <h2 className='text-center primary-color mb-4'>Please Login</h2>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control type="email" placeholder="Enter email" />
