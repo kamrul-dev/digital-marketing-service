@@ -2,14 +2,14 @@
     background-color: #683bc0;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-
 .nav-items a {
     text-decoration: none;
-    margin-right: 5px;
-    padding: 10px;
+    margin-right: 3px;
+    padding: 5px;
     /* color: #331C62; */
     /* color: white; */
-    font-size: 18px;
+    font-size: 17px;
+    text-align: center;
 }
 .nav-items a:hover{
     color: yellow;
