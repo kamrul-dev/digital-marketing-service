@@ -5,11 +5,11 @@ import logo from '../../../images/logo-digi.png';
 import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
-        <div>
-            <Navbar className='nav-container' style={{ backgroundColor: "" }} collapseOnSelect expand="lg">
+        <div className='sticky-top'>
+            <Navbar className='nav-container' collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand>
-                        <NavLink to='/'><img className='w-75' src={logo} alt="" /></NavLink>
+                        <NavLink to='/'><img className='w-50' src={logo} alt="" /></NavLink>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
