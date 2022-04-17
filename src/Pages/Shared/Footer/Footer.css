@@ -7,6 +7,11 @@
     color: white;
     line-height: 30px;
 }
-.last-footer-list p{
+
+.footer-list li a:hover {
+    color: yellow;
+}
+
+.last-footer-list p {
     color: yellow;
 }
