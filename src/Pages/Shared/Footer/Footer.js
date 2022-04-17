@@ -32,7 +32,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="row container mx-auto pt-5">
+                <div className="row container mx-auto pt-5 last-footer-list">
                     <div className="col-lg-6 col-sm-12">
                         <p>Copyright &copy; 2022 DIGI MARK</p>
                     </div>
