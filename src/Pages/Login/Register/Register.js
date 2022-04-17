@@ -13,7 +13,7 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const navigate = useNavigate();
 
 
@@ -55,6 +55,7 @@ const Register = () => {
                     <p>Already have an account? <Link to='/login' className='text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
                 </Form>
             </Container>
+
         </div>
     );
 };
