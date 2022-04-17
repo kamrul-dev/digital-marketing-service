@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import './Login.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [
@@ -13,6 +15,7 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
     const emailRef = useRef('');
     const passwordRef = useRef('');
@@ -47,7 +50,15 @@ const Login = () => {
         navigate('/register')
     }
 
-    const resetPassword = () => {
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        if (email) {
+            toast('Email sent, please check your email inbox!');
+        }
+        else {
+            toast('Please Enter Your Email Address!');
+        }
 
     }
     return (
@@ -66,10 +77,11 @@ const Login = () => {
                         Login
                     </Button>
                     <p>New in Digi Mark? <Link to='/register' className='text-decoration-none' onClick={navigateRegister}>Create an account</Link></p>
-                    <p>Forget Password? <button to='/' className='text-decoration-none btn btn-link'>Reset Password</button></p>
+                    <p>Forget Password? <button to='/' className='text-decoration-none btn btn-link' onClick={resetPassword}>Reset Password</button></p>
                 </Form>
                 {errorShow}
             </Container>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
