@@ -9,6 +9,8 @@ import Login from './Pages/Login/Login/Login';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import Register from './Pages/Login/Register/Register';
+import Checkout from './Pages/Checkout/Checkout/Checkout';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/service/:serviceId' element={<ServiceDetails></ServiceDetails>}></Route>
+        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
