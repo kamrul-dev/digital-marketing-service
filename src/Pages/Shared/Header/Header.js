@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import './Header.css';
 import logo from '../../../images/logo-digi.png';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
@@ -10,9 +10,11 @@ import { FiLogOut } from 'react-icons/fi';
 import { BiLogInCircle } from 'react-icons/bi';
 const Header = () => {
     const [user] = useAuthState(auth);
+    const navigate = useNavigate();
 
     const handleSignOut = () => {
         signOut(auth);
+        navigate('/');
     }
     return (
         <div className='sticky-top'>
