@@ -8,7 +8,7 @@ const Services = () => {
     return (
         <>
             <h3 className='text-center mt-5 mb-4 fw-bold primary-color'>My Services</h3>
-            <div className='row container mx-auto'>
+            <div className='row container mx-auto g-4'>
                 {
                     services.map(service => <Service
                         key={service.id}
