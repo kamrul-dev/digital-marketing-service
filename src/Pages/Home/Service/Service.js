@@ -19,7 +19,7 @@ const Service = ({ service }) => {
                     <Card.Body className='text-center' >
                         <Card.Title className='primary-color'>{title}</Card.Title>
                         <Card.Text>
-                            {description}
+                            {description.length < 80 ? description : description.slice(0, 80)}<span>...</span>
                         </Card.Text>
                         <Card.Text>
                             <span className='fs-5 fw-bold primary-color'>${price}</span> <small>/mo</small>
