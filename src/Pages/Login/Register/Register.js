@@ -1,9 +1,13 @@
 
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
+    const navigate = useNavigate();
+    const navigateLogin = () => {
+        navigate('/login')
+    }
     return (
         <div className='w-50 mx-auto vh-100 mt-5'>
             <Container>
@@ -21,7 +25,7 @@ const Register = () => {
                     <Button id='login-btn' variant="w-25 mx-auto d-block mb-2" type="submit">
                         Register
                     </Button>
-                    <p>Already have an account? <Link to='/login' className='text-decoration-none'>Please Login</Link></p>
+                    <p>Already have an account? <Link to='/login' className='text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
                 </Form>
             </Container>
         </div>

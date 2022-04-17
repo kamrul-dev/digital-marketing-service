@@ -1,9 +1,18 @@
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    const navigateRegister = () => {
+        navigate('/register')
+    }
+
+    const resetPassword = () => {
+
+    }
     return (
         <div className='w-50 mx-auto vh-100 mt-5'>
             <Container>
@@ -19,7 +28,7 @@ const Login = () => {
                     <Button id='login-btn' variant="w-25 mx-auto d-block mb-2" type="submit">
                         Login
                     </Button>
-                    <p>New in Digi Mark? <Link to='/register' className='text-decoration-none'>Create an account</Link></p>
+                    <p>New in Digi Mark? <Link to='/register' className='text-decoration-none' onClick={navigateRegister}>Create an account</Link></p>
                     <p>Forget Password? <button to='/' className='text-decoration-none btn btn-link'>Reset Password</button></p>
                 </Form>
             </Container>
