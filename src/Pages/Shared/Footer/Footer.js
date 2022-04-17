@@ -15,10 +15,9 @@ const Footer = () => {
                     <div className="col-md-3 col-sm-12 col-lg-3">
 
                         <ul className='footer-list'>
-                            <li><Link to='/'>tim tim</Link></li>
-                            <li><Link to='/'>tim tim</Link></li>
-                            <li><Link to='/'>tim tim</Link></li>
-                            <li><Link to='/'>tim tim</Link></li>
+                            <li><Link to='/'>Open a Ticket</Link></li>
+                            <li><Link to='/'>Google Map</Link></li>
+                            <li><Link to='/'>Support</Link></li>
                         </ul>
                         {/* <Link to='/'>About online food</Link>
                         <Link to='/'>Read our blog</Link>
@@ -27,10 +26,9 @@ const Footer = () => {
                     </div>
                     <div className="col-md-3 col-sm-12 col-lg-3">
                         <ul className='footer-list'>
-                            <li><Link to='/'>tim tim</Link></li>
-                            <li><Link to='/'>tim tim</Link></li>
-                            <li><Link to='/'>tim tim</Link></li>
-                            <li><Link to='/'>tim tim</Link></li>
+                            <li><Link to='/'>Profiles</Link></li>
+                            <li><Link to='/'>Ask any?</Link></li>
+                            <li><Link to='/'>Get help</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -47,7 +45,6 @@ const Footer = () => {
                     <div className="col-lg-2 col-sm-12">
                         <p>Pricing</p>
                     </div>
-
                 </div>
             </div>
         </>
