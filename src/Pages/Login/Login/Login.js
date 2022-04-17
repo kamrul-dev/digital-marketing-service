@@ -25,7 +25,7 @@ const Login = () => {
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control type="password" placeholder="Password" required/>
                     </Form.Group>
-                    <Button id='login-btn' variant="w-25 mx-auto d-block mb-2" type="submit">
+                    <Button id='login-btn' variant="w-50 mx-auto d-block mb-2" type="submit">
                         Login
                     </Button>
                     <p>New in Digi Mark? <Link to='/register' className='text-decoration-none' onClick={navigateRegister}>Create an account</Link></p>
