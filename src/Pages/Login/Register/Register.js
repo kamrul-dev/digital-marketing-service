@@ -1,9 +1,29 @@
+
 import React from 'react';
+import { Button, Container, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     return (
-        <div>
-            <h2>This is register page</h2>
+        <div className='w-50 mx-auto vh-100 mt-5'>
+            <Container>
+                <h2 className='text-center primary-color mb-4'>Please Register</h2>
+                <Form>
+                    <Form.Group className="mb-3" controlId="formBasicName">
+                        <Form.Control type="name" placeholder="Your Name" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control type="email" placeholder="Enter email" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control type="password" placeholder="Password" />
+                    </Form.Group>
+                    <Button id='login-btn' variant="w-25 mx-auto d-block mb-2" type="submit">
+                        Register
+                    </Button>
+                    <p>Already have an account? <Link to='/login' className='text-decoration-none'>Please Login</Link></p>
+                </Form>
+            </Container>
         </div>
     );
 };
