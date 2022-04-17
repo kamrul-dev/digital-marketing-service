@@ -15,11 +15,11 @@ const Login = () => {
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
-                    <Button id='login-btn' variant="w-50 mx-auto d-block mb-2" type="submit">
+                    <Button id='login-btn' variant="w-25 mx-auto d-block mb-2" type="submit">
                         Login
                     </Button>
-                    <p>New in Digi Mark? <Link to='/' className='text-decoration-none'>Create an account</Link></p>
-                    <p>Forget Password? <Link to='/' className='text-decoration-none'>Reset Password</Link></p>
+                    <p>New in Digi Mark? <Link to='/register' className='text-decoration-none'>Create an account</Link></p>
+                    <p>Forget Password? <button to='/' className='text-decoration-none btn btn-link'>Reset Password</button></p>
                 </Form>
             </Container>
         </div>
