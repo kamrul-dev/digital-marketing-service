@@ -7,6 +7,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
 import { FiLogOut } from 'react-icons/fi';
+import { BiLogInCircle } from 'react-icons/bi';
 const Header = () => {
     const [user] = useAuthState(auth);
 
@@ -30,7 +31,7 @@ const Header = () => {
                             {
                                 user ? <button className='btn btn-warning text-decoration-none primary-color rounded-pill' onClick={handleSignOut}>Sign out <FiLogOut /></button> :
                                     <NavLink to='/login' className={({ isActive }) => (isActive ? 'active-link' : 'link')}>
-                                        Login
+                                        <BiLogInCircle/> Login
                                     </NavLink>
                             }
                         </Nav>
