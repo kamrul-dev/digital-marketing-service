@@ -17,10 +17,10 @@ const Register = () => {
                         <Form.Control type="name" placeholder="Your Name" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control type="email" placeholder="Enter email" required/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="Password" required/>
                     </Form.Group>
                     <Button id='login-btn' variant="w-25 mx-auto d-block mb-2" type="submit">
                         Register

@@ -19,11 +19,11 @@ const Login = () => {
                 <h2 className='text-center primary-color mb-4'>Please Login</h2>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control type="email" placeholder="Enter email" required/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="Password" required/>
                     </Form.Group>
                     <Button id='login-btn' variant="w-25 mx-auto d-block mb-2" type="submit">
                         Login
