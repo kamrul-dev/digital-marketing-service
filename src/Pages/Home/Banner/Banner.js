@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import banner1 from '../../../images/Banner/banner1.jpg';
 
 //Carouse Slider in hompage
 const Banner = () => {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+    };
     return (
         <div>
-            <Carousel>
+            <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
