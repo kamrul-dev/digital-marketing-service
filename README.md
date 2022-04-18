@@ -7,6 +7,12 @@
 
 * Firebase Authentication Functionality: User Registration, Sign with Social Media.
 
+* Email Verificatin link sending
+
+* Reset password
+
+* Display Error message 
+
 * In Header Navigation Bar, There is a logo and NavLink items. NavLinks setup with react-router, when click the links it will go to specific route.
 
 * Active NavLinks Applied in Navigation Bar.
