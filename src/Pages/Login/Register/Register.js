@@ -35,7 +35,7 @@ const Register = () => {
         navigate('/home');
     }
     return (
-        <div className='w-50 mx-auto vh-100 mt-5'>
+        <div className='w-50 mx-auto mt-5'>
             <Container>
                 <h2 className='text-center primary-color mb-4'>Please Register</h2>
                 <SocialLogin></SocialLogin>

@@ -1,9 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Checkout = () => {
     return (
-        <div>
-            <h2>Check out done!</h2>
+        <div className='vh-100'>
+            <Container>
+                <h2>Thanks for Taking the Service!</h2>
+            </Container>
         </div>
     );
 };
