@@ -6,7 +6,7 @@ const About = () => {
         <div className='row container mx-auto mt-5'>
             <div className='col-md-6'>
                 <div className='text-center about-image-container'>
-                    <img className='p-2' src={myphoto} alt="" />
+                    <img className='p-2 img-fluid' src={myphoto} alt="" />
                     <h5>Md. Kamrul Hasan</h5>
                     <p>Bachelor of Computer Science and <br /> Engineering,Passed Year 2022.</p>
                 </div>
