@@ -7,7 +7,7 @@
 
 * Firebase Authentication Functionality: User Registration, Sign with Social Media.
 
-* Email Verificatin link sending
+* Email Verification link sending
 
 * Reset password
 
