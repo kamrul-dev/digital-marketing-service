@@ -1,0 +1,17 @@
+.learn-ex-btn {
+    border: 1px solid #683bc0;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.learn-ex-btn:hover {
+    background-color: #683bc0;
+    color: white;
+    transition: 0.3s;
+}
+.grow-paragraph p{
+    padding-left: 15px;
+}
