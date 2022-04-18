@@ -1,0 +1,11 @@
+.notfound-section {
+    height: 100vh;
+    align-items: center;
+}
+
+.notfound-img {}
+
+.notfound-img img {
+    border-radius: 20px;
+    width: 600px;
+}
