@@ -31,7 +31,7 @@ const ServiceDetails = () => {
                         <Form.Control type="text" name='phone' placeholder="Your phone" required/>
                     </Form.Group>
                     <Button id='checkout-btn' variant="w-50 mx-auto d-block mb-2 mt-2" type="submit">
-                        Proceed to Checkout
+                        Checkout
                     </Button>
                 </Form>
             </Container>
