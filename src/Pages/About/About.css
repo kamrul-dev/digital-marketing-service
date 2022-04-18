@@ -1,0 +1,5 @@
+.about-image-container img{
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px #8059cc;
+    margin-bottom: 20px;
+}
