@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
                 <div className="row container mx-auto pt-5 pr-5 last-footer-list">
                     <div className="col-lg-3 col-sm-12 d-flex justify-content-center">
-                        <p>Copyright &copy; 2022 DIGI MARK</p>
+                        <p>Copyright &copy; {new Date().getFullYear()} DIGI MARK</p>
                     </div>
                     <div className="col-lg-2 col-sm-12 d-flex justify-content-center">
                         <p>Privacy Policy</p>
