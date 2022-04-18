@@ -58,3 +58,7 @@
 
 * React-Firebase-Hooks
 
+## Project Requirements:
+
+<img src='./src/images/proj-req1.jpeg'/>
+<img src='./src/images/proj-req2.jpeg'/>
